@@ -22,7 +22,7 @@ try:
 except ImportError:
     MiddlewareMixin = object
 
-UNSET = MiddlewareMixin()
+UNSET = object()
 
 
 class SubdomainMiddleware(MiddlewareMixin):
